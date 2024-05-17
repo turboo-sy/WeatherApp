@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --Green: #198754;
+  --White: #ffffff;
+  --Gree: #6c757d;
+  --Black: #000;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+header {
+  background-color: var(--Green);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+}
+.gird {
+  display: flex;
+  justify-content: space-between;
+}
+.gird .leftSide {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  align-items: normal;
+  height: 70%;
+  margin-left: 11px;
+}
+.leftSide .titleCity {
+  font-size: 2em;
+  line-height: 1;
+  letter-spacing: -1px;
+  font-weight: bold;
+  padding: 10px 0px 15px;
+}
+.leftSide input {
+  outline: none;
+  font-size: inherit;
+  font-family: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+  font-weight: normal;
+  padding: 9px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #bebbbb;
+}
+.leftSide input:hover {
+  border: 1px solid #000000b1;
+  box-shadow: rgba(13, 110, 253, 0.25) 0px 0px 0px 4px;
+}
+.leftSide button {
+  cursor: pointer;
+  background-color: var(--Green);
+  color: white;
+  border: none;
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+.leftSide button:hover {
+  box-shadow: rgba(60, 153, 110, 0.5) 0px 0px 0px 4px;
+}
+.localStorge {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+.localStorge label {
+  font-weight: 700;
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+}
+.localStorge input {
+  width: 20%;
+}
+.localStorge #saveBtn {
+  width: 100%;
+}
+.gird .rightSide {
+  max-width: 100%;
+  margin: 10px 25px;
+  width: 100%;
+}
+.gird .rightSide .container {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #198754;
+  width: 100%;
+  flex-direction: column;
+  padding: 10px 25px 10px;
+  border-radius: 13px;
+  color: white;
+}
+.gird .rightSide .container h3,
+h6 {
+  font-size: 1.5em;
+  line-height: 1.5;
+  margin: 0;
+}
+.gird h4 {
+  margin: 28px 13px 21px;
+  font-size: 1.5rem;
+}
+.gird .rightSide .cards {
+  display: grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  gap: 15px;
+}
+.gird .rightSide .cards .crd {
+  background-color: #6c757d;
+  line-height: 24px;
+  padding: 1.5rem 1.4rem 1.4rem;
+  color: white;
+  border-radius: 8px;
+  width: fit-content;
+  height: fit-content;
+}
+.gird .rightSide .cards .crd h5 {
+  font-size: 1.5rem;
+  padding-bottom: 12px;
+}
+.gird .rightSide .cards .crd h6 {
+  font-size: 1rem;
+  font-weight: 500;
+  padding-bottom: 12px;
+}
+
+/* start media screen  */
+@media (min-width: 360px) and (max-width: 650px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+  .gird .leftSide .titleCity {
+    font-size: 18px;
+    text-align: center;
+  }
+  .gird .leftSide input {
+    width: 118%;
+  }
+  .leftSide button {
+    text-align: center;
+    padding: 7px;
+    font-size: 0.9rem;
+  }
+  .localStorge label {
+    font-size: 18px;
+    text-align: center;
+  }
+}
